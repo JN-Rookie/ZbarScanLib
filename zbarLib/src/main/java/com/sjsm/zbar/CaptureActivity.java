@@ -64,6 +64,16 @@ public class CaptureActivity extends Activity {
     }
 
     private void findViewById() {
+        autoFocusHandler = new Handler();
+        mCameraManager = new CameraManager(this);
+        try {
+            mCameraManager.openDriver();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        mCamera = mCameraManager.getCamera();
+
         scanPreview = (FrameLayout) findViewById(R.id.capture_preview);
         scanContainer = (RelativeLayout) findViewById(R.id.capture_container);
         scanCropView = (RelativeLayout) findViewById(R.id.capture_crop_view);
@@ -74,10 +84,10 @@ public class CaptureActivity extends Activity {
             @Override
             public void onClick(View view) {
                 if (!isOpen) {
-                    isLightEnable(true);
+                    CodeUtils.isLightEnable(mCamera, true);
                     isOpen = true;
                 } else {
-                    isLightEnable(false);
+                    CodeUtils.isLightEnable(mCamera, false);
                     isOpen = false;
                 }
             }
@@ -91,15 +101,7 @@ public class CaptureActivity extends Activity {
     }
 
     private void initViews() {
-        autoFocusHandler = new Handler();
-        mCameraManager = new CameraManager(this);
-        try {
-            mCameraManager.openDriver();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        mCamera = mCameraManager.getCamera();
         mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
         scanPreview.addView(mPreview);
 
@@ -283,21 +285,4 @@ public class CaptureActivity extends Activity {
         return 0;
     }
 
-    public static void isLightEnable(boolean isEnable) {
-        if (isEnable) {
-            Camera camera = CameraManager.get().getCamera();
-            if (camera != null) {
-                Camera.Parameters parameter = camera.getParameters();
-                parameter.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-                camera.setParameters(parameter);
-            }
-        } else {
-            Camera camera = CameraManager.get().getCamera();
-            if (camera != null) {
-                Camera.Parameters parameter = camera.getParameters();
-                parameter.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
-                camera.setParameters(parameter);
-            }
-        }
-    }
 }

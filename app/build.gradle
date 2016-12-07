@@ -27,6 +27,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
     compile 'com.anthonycr.grant:permissions:1.0'
-    compile project(':zbar')
-    compile 'com.google.zxing:core:3.3.0'
+    compile project(':zbarLib')
 }

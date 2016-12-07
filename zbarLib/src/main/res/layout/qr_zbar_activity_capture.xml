@@ -80,29 +80,29 @@
             android:paddingTop="15dp"
         >
 
-            <!--<LinearLayout-->
-                <!--android:id="@+id/linear1"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:gravity="center_horizontal"-->
-                <!--android:orientation="vertical"-->
-            <!--&gt;-->
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+            >
 
-                <!--<ImageView-->
-                    <!--android:layout_width="50dp"-->
-                    <!--android:layout_height="50dp"-->
-                    <!--android:background="@drawable/light"-->
-                <!--/>-->
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/light"
+                />
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--android:text="手电筒"-->
-                    <!--android:textColor="#ffffff"-->
-                <!--/>-->
-            <!--</LinearLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="手电筒"
+                    android:textColor="#ffffff"
+                />
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/linear2"
                 android:layout_width="wrap_content"
