@@ -15,5 +15,5 @@ allprojects {<br>
 		}<br>
 	}<br>
 2、在Module.gradle里添加compile<br>
-compile 'com.github.JN-caiwei:ZbarScanLib:v1.0.2'<br>
+compile 'com.github.JN-caiwei:ZbarScanLib:v1.0.4'<br>
 
