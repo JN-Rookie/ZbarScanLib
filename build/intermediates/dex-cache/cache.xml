@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\workspace\ZbarScanLib\zbarLib\build\intermediates\bundles\default\libs\zbardecoder.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="18c0af68a7fdbab08732966e0cc2749ad1b34c9b">
+        <dex dex="E:\workspace\ZbarScanLib\app\build\intermediates\pre-dexed\debug\zbardecoder_882c7f695fe8ac9a81a95cc38c3b5d737140ac98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sjsm\.android\build-cache\9db7b0697baaaa9aeadf625da068376488b46f21\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8d1d93a88af982b2dcc2dca771aaa78bee2772d8">
+        <dex dex="E:\workspace\ZbarScanLib\app\build\intermediates\pre-dexed\debug\classes_61c9a1a620fb7aa230130e8a808be6636aac29d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\workspace\ZbarScanLib\zbarLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="46985800543b8fa32d1f4f21740e4e2be430c925">
+        <dex dex="E:\workspace\ZbarScanLib\app\build\intermediates\pre-dexed\debug\classes_d0bd04fb93faec11121f93cbf998e2e64e7d4b9a.jar" />
+    </item>
+
+</items>

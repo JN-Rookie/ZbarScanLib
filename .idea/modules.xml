@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PersonalScanDemo.iml" filepath="$PROJECT_DIR$/PersonalScanDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZbarScanLib.iml" filepath="$PROJECT_DIR$/ZbarScanLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/zbarLib/zbarLib.iml" filepath="$PROJECT_DIR$/zbarLib/zbarLib.iml" />
